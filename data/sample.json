@@ -1,0 +1,120 @@
+{
+    "dashboard": [{
+            "branch": "Edinburgh",
+            "region": "North",
+            "area": "Area 1",
+            "modules_passed": 62,
+            "modules_in_progress": 13,
+            "modules_failed": 18,
+            "modules_overdue": 3
+        },
+        {
+            "branch": "Glasgow",
+            "region": "North",
+            "area": "Area 1",
+            "modules_passed": 31,
+            "modules_in_progress": 35,
+            "modules_failed": 10,
+            "modules_overdue": 2
+        },
+        {
+            "branch": "Newcastle",
+            "region": "North",
+            "area": "Area 2",
+            "modules_passed": 61,
+            "modules_in_progress": 26,
+            "modules_failed": 9,
+            "modules_overdue": 0
+        },
+        {
+            "branch": "Sunderland",
+            "region": "North",
+            "area": "Area 2",
+            "modules_passed": 8,
+            "modules_in_progress": 62,
+            "modules_failed": 22,
+            "modules_overdue": 3
+        },
+        {
+            "branch": "London City",
+            "region": "South",
+            "area": "Area 3",
+            "modules_passed": 35,
+            "modules_in_progress": 29,
+            "modules_failed": 7,
+            "modules_overdue": 5
+        },
+        {
+            "branch": "London Camden",
+            "region": "South",
+            "area": "Area 3",
+            "modules_passed": 32,
+            "modules_in_progress": 28,
+            "modules_failed": 20,
+            "modules_overdue": 6
+        },
+        {
+            "branch": "Brighton",
+            "region": "South",
+            "area": "Area 5",
+            "modules_passed": 24,
+            "modules_in_progress": 38,
+            "modules_failed": 3,
+            "modules_overdue": 1
+        },
+        {
+            "branch": "London Kings Cross",
+            "region": "South",
+            "area": "Area 3",
+            "modules_passed": 25,
+            "modules_in_progress": 50,
+            "modules_failed": 9,
+            "modules_overdue": 7
+        },
+        {
+            "branch": "London Oxford Circus",
+            "region": "South",
+            "area": "Area 3",
+            "modules_passed": 9,
+            "modules_in_progress": 38,
+            "modules_failed": 12,
+            "modules_overdue": 0
+        },
+        {
+            "branch": "London O2 Arena",
+            "region": "South",
+            "area": "Area 3",
+            "modules_passed": 9,
+            "modules_in_progress": 49,
+            "modules_failed": 13,
+            "modules_overdue": 8
+        },
+        {
+            "branch": "Liverpool",
+            "region": "South",
+            "area": "Area 4",
+            "modules_passed": 57,
+            "modules_in_progress": 26,
+            "modules_failed": 13,
+            "modules_overdue": 4
+        },
+        {
+            "branch": "Manchester",
+            "region": "South",
+            "area": "Area 4",
+            "modules_passed": 40,
+            "modules_in_progress": 43,
+            "modules_failed": 11,
+            "modules_overdue": 7
+        },
+        {
+            "branch": "Portsmouth",
+            "region": "South",
+            "area": "Area 5",
+            "modules_passed": 7,
+            "modules_in_progress": 15,
+            "modules_failed": 7,
+            "modules_overdue": 8
+        }
+    ]
+}

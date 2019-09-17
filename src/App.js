@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{Component} from 'react';
+import Chart from 'react-apexcharts';
+import Header from './components/Header';
+import Dashboard from './components/Dashboard';
+import Bar from './components/Bar';
+import Navigation from './components/Navigation';
+import Pie from './components/Pie';
+import Trainees from './components/Trainees';
+import Branches from './components/Branches';
+import Reports from './components/Reports';
+import Settings from './components/Settings';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+class App extends Component {
+  render(){
+    return(
+      <div className='App'>
+        <Dashboard/>
+        <Header/>
+        <Bar/>
     </div>
-  );
+
+    )
+  }
+
 }
 
 export default App;
