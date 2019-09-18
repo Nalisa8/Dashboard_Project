@@ -1,30 +1,92 @@
 import React,{Component} from 'react';
-// import {broweserHistory} from "react-router";
 import Chart from 'react-apexcharts';
 
-class  Dashboard extends React.Component{
-  constructor(props) {
-    super(props);
+class  Dashboard extends Component{
+     constructor(props) {
+       super(props);
 
-    this.state = {
-      options: {
-        chart: {
-          id: 'apexchart-example'
-        },
-        xaxis: {
-          categories: [1991, 1992, 1993, 1994, 1995, 1996, 1997, 1998]
-        }
-      },
-      series: [{
-        name: 'series-1',
-        data: [30, 40, 45, 50, 49, 60, 70, 91]
-      }]
-    }
-  }
-  render() {
-    return (
-      <Chart options={this.state.options} series={this.state.series} type="bar" width={500} height={320} />
-    )
-  }
-}
+       this.state = {
+         options: {
+           chart: {
+             stacked: true,
+             shadow: {
+               enabled: true,
+               blur: 1,
+               opacity: 0.5
+             }
+           },
+           plotOptions: {
+             bar: {
+               horizontal: true,
+               barHeight: '60%',
+             },
+           },
+           dataLabels: {
+             enabled: false
+           },
+           stroke: {
+             width: 2,
+           },
+           xaxis: {
+             categories: [2008, 2009, 2010, 2011, 2012, 2013, 2014],
+           },
+           yaxis: {
+             title: {
+               text: undefined
+             },
+           },
+           tooltip: {
+             shared: false,
+             y: {
+               formatter: function (val) {
+                 return val + "K"
+               }
+             }
+           },
+           fill: {
+             type: 'pattern',
+             opacity: 1,
+             pattern: {
+               style: ['circles', 'slantedLines', 'verticalLines', 'horizontalLines'],
+             }
+           },
+           states: {
+             hover: {
+               filter: 'none'
+             }
+           },
+           legend: {
+             position: 'right',
+             offsetY: 40
+           }
+         },
+         series: [{
+           name: 'Marine Sprite',
+           data: [44, 55, 41, 37, 22, 43, 21]
+         }, {
+           name: 'Striking Calf',
+           data: [53, 32, 33, 52, 13, 43, 32]
+         }, {
+           name: 'Tank Picture',
+           data: [12, 17, 11, 9, 15, 11, 20]
+         }, {
+           name: 'Bucket Slope',
+           data: [9, 7, 5, 8, 6, 9, 4]
+         }],
+       }
+     }
+
+     render() {
+       return (
+
+
+         <div id="chart">
+           <p><b> this is a table pareto</b></p>
+         <Chart options={this.state.options} series={this.state.series} type="bar" height="300" />
+         </div>
+
+
+       );
+     }
+   }
 export default Dashboard;
